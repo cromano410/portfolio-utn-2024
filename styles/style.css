@@ -1,4 +1,26 @@
 * {
     padding: 0;
     margin: 0;
+    
+}
+
+.logo {
+    width: 150px;}
+
+header div {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    background-color: rgb(249, 137, 1);
+    }
+
+.navegador ul {
+    display: flex;
+    font-size: 18px;
+}   
+
+.navegador a  {
+    padding: 15px;
+    
+
 }
