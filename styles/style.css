@@ -4,6 +4,11 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+body {
+
+    background-image: url(/assets/images/bg.png);
+}
+
 :root{
     --primary-color: #ff8400;
     --secundary-color: #7b7777;
@@ -39,6 +44,10 @@ p {
         list-style: none;
     }
 
+    hr {
+        padding: 100px;
+        }
+
     
     .link-nav{ 
          font-family: "Ubuntu Sans", sans-serif;
@@ -72,8 +81,8 @@ p {
     }
 
     #banner img {
-        height: 50%;
-        background-color: var(--secundary-color);
+        height: 70vh;
+        background-color: var(--tertiary-color);
         
        
 
@@ -88,7 +97,7 @@ p {
         background-image:url("/assets/images/nba.bg.jpeg") ;
         background-size:cover;
         opacity: 0.9;
-        height: 70.5vh;
+        height: 70vh;
         
        
     
@@ -108,7 +117,7 @@ p {
     text-align: center;
 }
 
-#categories h2 {
+#categories h2, #products h2, #mail h2 {
     font-size: 40px;
     background-color: var(--primary-color);
     border: var(--secundary-color) solid;
@@ -167,7 +176,45 @@ color: greenyellow;
 
 
 
+#mail {
+    font-size: 20px;}
 
+#mail h2{
+    text-align: center;
+}    
+
+#mail label, #mail input ,#mail textarea, #mail button {
+
+    display: block;
+    width: 100%;
+
+
+}    
+
+
+form {
+    background-color: var(--tertiary-color);
+    color: var(--secundary-color);
+    width: auto;
+    padding:1px 25%;
+}
+
+button {
+    font-size: 20px;
+
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+    padding: 8px 8px;
+    margin: 10px 0 10px 0 ;
+    border-radius: 15px;
+    border-color: var(--secundary-color);
+
+}
+
+hr{
+    border-top: 10px solid var(--primary-color);
+    border-color: var(--tertiary-color);
+}
 
 
     
