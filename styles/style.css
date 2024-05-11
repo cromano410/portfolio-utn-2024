@@ -6,7 +6,8 @@
 
 :root{
     --primary-color: #ff8400;
-    --secundary-color: #7b7777; 
+    --secundary-color: #7b7777;
+    --tertiary-color: #1e1e1e;
     
 }
 
@@ -28,6 +29,7 @@ p {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        border: var(--secundary-color) solid;
        
     }
 
@@ -46,11 +48,11 @@ p {
     }
 
     .link-nav:hover{
-
         background-color: #000000db;
         color: var(--primary-color);
         border-radius: 12px;
         padding: 20px;
+
     
     }
 
@@ -101,6 +103,74 @@ p {
     color: var(--primary-color);
     background-color: hwb(0 0% 100% / 0.637);
 }
+
+#categories, #products {
+    text-align: center;
+}
+
+#categories h2 {
+    font-size: 40px;
+    background-color: var(--primary-color);
+    border: var(--secundary-color) solid;
+}
+
+#categories h3, #products h3 {
+    color: aliceblue;
+}
+
+.container-grid-categories, .container-grid-products {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 20px;
+}
+
+#categories, img {
+    height: 300px;
+}
+
+#categories .card, #products .card {
+
+    background-color: var(--tertiary-color);
+    padding: 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px -9px rgba(26,24,24,0.75);
+    -webkit-box-shadow: 10px 10px 5px -9px rgba(26,24,24,0.75);
+    -moz-box-shadow: 10px 10px 5px -9px rgba(26,24,24,0.75);
+    transition: 0.3s all;
+}
+
+#categories .card:hover {
+    scale: 1.04;
+}
+
+#products p {
+
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+#products button {
+
+    padding: 10px;
+    color: var(--primary-color);
+    background-color: (var(--primary-color));
+    border-radius: 12px;
+}
+
+#products span {
+font-size: 25px;
+color: greenyellow;
+}
+
+
+
+
+
+
+    
    
 
 
