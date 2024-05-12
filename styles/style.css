@@ -7,6 +7,7 @@
 body {
 
     background-image: url(/assets/images/bg.png);
+    height: 100%;
 }
 
 :root{
@@ -39,28 +40,32 @@ p {
     }
 
     header nav ul {
+        font-family: "Ubuntu Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
         display: flex;
         gap: 10px;
         list-style: none;
+        text-decoration: none;
     }
 
-    hr {
-        padding: 100px;
-        }
-
-    
-    .link-nav{ 
-         font-family: "Ubuntu Sans", sans-serif;
-         font-optical-sizing: auto;
-         font-style: normal;
+    .link-nav li a {
+        text-decoration: none;
+        color: var(--secundary-color);
+        padding: 20px;
+        gap: 10px;
 
     }
 
-    .link-nav:hover{
+  
+
+
+    .link-nav li a:hover{
         background-color: #000000db;
         color: var(--primary-color);
         border-radius: 12px;
-        padding: 20px;
+        padding: 12px;
+        gap: 20px
 
     
     }
@@ -177,7 +182,8 @@ color: greenyellow;
 
 
 #mail {
-    font-size: 20px;}
+    font-size: 20px;
+}
 
 #mail h2{
     text-align: center;
@@ -186,17 +192,24 @@ color: greenyellow;
 #mail label, #mail input ,#mail textarea, #mail button {
 
     display: block;
-    width: 100%;
+    align-items: center;
+    text-align: center;
+    width: 800px;
+    height: 50px;
+    margin: 1px 150px;
+}
 
+#mail button{
+    margin: 40px 150px  ;
 
-}    
-
+}
 
 form {
     background-color: var(--tertiary-color);
     color: var(--secundary-color);
     width: auto;
-    padding:1px 25%;
+    padding:1px 25px;
+    
 }
 
 button {
@@ -214,10 +227,47 @@ button {
 hr{
     border-top: 10px solid var(--primary-color);
     border-color: var(--tertiary-color);
+    padding: 10px;
+    margin-top: 10px;
 }
 
-
+footer section h2 {
+    font-size: 40px;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    position: relative;
     
+}   
+
+   .skewed {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--secundary-color);
+    transform: skewY(6deg);
+    transform-origin: top right;
+    
+  }
+
+  section li, i  {
+
+    font-size: 30px;
+   
+    position: relative;
+  }
+   
+  .bxl-whatsapp {
+    font-size: 50px;
+    color: #ffff;
+    position:relative;
+    right: -1160px;
+    top: -117.5px;
+    background-color:#25d366;
+    border-radius: 50px;
+  }
+
+
+
    
 
 
