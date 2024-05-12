@@ -135,13 +135,13 @@ p {
 .container-grid-categories, .container-grid-products {
     
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     gap: 40px;
     padding: 20px;
 }
 
 #categories, img {
-    height: 300px;
+    height: 200px;
 }
 
 #categories .card, #products .card {
@@ -190,25 +190,25 @@ color: greenyellow;
 }    
 
 #mail label, #mail input ,#mail textarea, #mail button {
-
     display: block;
     align-items: center;
     text-align: center;
-    width: 800px;
+    width: 500px;
     height: 50px;
-    margin: 1px 150px;
 }
 
 #mail button{
-    margin: 40px 150px  ;
+    margin: 40px 5px  ;
 
 }
 
 form {
+    align-items: center;
+    justify-content: center;
     background-color: var(--tertiary-color);
     color: var(--secundary-color);
     width: auto;
-    padding:1px 25px;
+    padding:10px 400px
     
 }
 
@@ -282,9 +282,27 @@ footer i {
 }
 
 
+@media (max-width: 880px){
+    #banner , #mail,
+    #categories .container-grid-categories,
+    #products .container-grid-products {
+    
+        grid-template-columns: 1fr 1fr;
+        
+    }
+}
+
+
+@media (max-width: 480px){
+
    
-
-
+    #banner, #mail
+    #categories .container-grid-categories,
+    #products .container-grid-products {
+        grid-template-columns: 1fr;
+        
+    }
+}
 
 
     
